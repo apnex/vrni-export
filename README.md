@@ -14,7 +14,7 @@ You can clone this repo, and edit the `drv.export.csv.sh` script to include the 
 
 Note:
 - This script requires to be executed in a linux BASH shell environment
-- `JQ` is a required installation dependency
+- `cURL` and `JQ` are required installation dependencies
 
 For `JQ` - most systems can install this from the distro package manager - ie for Ubuntu:  
 ```
