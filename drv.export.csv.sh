@@ -80,7 +80,6 @@ MYAUTH=$(curl -s -k --location -c "./vrni.cookies" -D "./vrni.headers" -X POST \
 TOKEN=$(echo ${MYAUTH} | jq -r '.csrfToken' 2>/dev/null)
 
 ### Check TOKEN is valid
-#		--data-urlencode "x-vrni-csrf-token=${TOKEN}" \
 if [[ -n ${TOKEN} ]]; then
 	echo "Authentication SUCCESS - saving flows to [ ${OUTPUT} ]"
 
