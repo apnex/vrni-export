@@ -2,8 +2,8 @@
 A collection of scripts to assist in exporting flow data from the vRealize Network Insight Platform Appliance.  
 
 **WARNING: This is for demonstration / lab purposes only, as this example script has the following limitations:**
-- Error Checking
-- API Rate Limiting
+- No Error Checking
+- No API Rate Limiting
 - Maximum export of `999999` flows per execution
 - Restricted to `Now` in the vRNI query
 - Minimal testing against large datasets
