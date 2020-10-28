@@ -1,12 +1,13 @@
 # vRNI CSV Export
 A collection of scripts to assist in exporting flow data from the vRealize Network Insight Platform Appliance.  
 
-WARNING: This is for demonstration / lab purposes only, as this example script has the following limitations:  
+**WARNING: This is for demonstration / lab purposes only, as this example script has the following limitations:**
 - Error Checking
 - API Rate Limiting
 - Maximum export of `999999` flows per execution
 - Restricted to `Now` in the vRNI query
 - Minimal testing against large datasets
+- CSV fields are currently fixed
 
 ### Get started
 You can clone this repo, and edit the `drv.export.csv.sh` script to include the desired endpoint and credentials
