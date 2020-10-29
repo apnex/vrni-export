@@ -75,7 +75,7 @@ fi
 URL="https://${ENDPOINT}/api/auth/login"
 MYAUTH=$(curl -s -k --location -c "./vrni.cookies" -D "./vrni.headers" -X POST \
 	-H 'Content-Type: application/json' \
-	--data-raw "${LDAP}" \
+	--data-raw "${AUTHBODY}" \
 "${URL}")
 TOKEN=$(echo ${MYAUTH} | jq -r '.csrfToken' 2>/dev/null)
 
